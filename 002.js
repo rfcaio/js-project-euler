@@ -1,10 +1,5 @@
 
-const fib = n => {
-  if (n === 1 || n === 2) {
-    return n
-  }
-  return fib(n - 1) + fib(n - 2)
-}
+const fib = n => (n === 1 || n === 2) ? n : fib(n - 1) + fib(n - 2)
 let element = null
 let i = 1
 let sum = 0
