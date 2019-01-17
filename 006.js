@@ -1,9 +1,9 @@
 
-let sum = 0
-let sumOfSquares = 0
-for (let i = 1; i <= 100; i += 1) {
-  sum += i
-  sumOfSquares += i ** 2
+const sum_of_square = numbers => {
+  return numbers.reduce((total, number) => total + number ** 2, 0)
 }
-let squareOfSum = sum ** 2
-console.log(squareOfSum - sumOfSquares)
+const square_of_sum = numbers => {
+  return numbers.reduce((total, number) => total + number, 0) ** 2
+}
+let numbers = Array.from(new Array(100), (number, index) => index + 1)
+console.log(square_of_sum(numbers) - sum_of_square(numbers))
