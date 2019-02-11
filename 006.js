@@ -1,9 +1,11 @@
 
-const sum_of_square = numbers => {
-  return numbers.reduce((total, number) => total + number ** 2, 0)
+function sum_of_square (serie) {
+  return serie.reduce((total, number) => total + number ** 2, 0)
 }
-const square_of_sum = numbers => {
-  return numbers.reduce((total, number) => total + number, 0) ** 2
+
+function square_of_sum (serie) {
+  return serie.reduce((total, number) => total + number, 0) ** 2
 }
-let numbers = Array.from(new Array(100), (number, index) => index + 1)
-console.log(square_of_sum(numbers) - sum_of_square(numbers))
+
+let serie = Array.from(new Array(100), (number, index) => index + 1)
+console.log(square_of_sum(serie) - sum_of_square(serie))
