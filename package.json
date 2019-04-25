@@ -1,0 +1,36 @@
+{
+  "author": {
+    "email": "rfcaio90@gmail.com",
+    "name": "Caio Rodrigues Fernandes",
+    "url": "https://github.com/rfcaio"
+  },
+  "dependencies": {},
+  "description": "Solutions of Project Euler problems.",
+  "devDependencies": {
+    "eslint": "5.16.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.17.2",
+    "eslint-plugin-node": "8.0.1",
+    "eslint-plugin-promise": "4.1.1",
+    "eslint-plugin-standard": "4.0.0",
+    "husky": "1.0.0"
+  },
+  "homepage": "https://github.com/rfcaio/js-project-euler#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
+  },
+  "license": "MIT",
+  "name": "js-project-euler",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rfcaio/js-project-euler.git"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint *.js"
+  },
+  "version": "1.0.0"
+}

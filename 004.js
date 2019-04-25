@@ -1,5 +1,6 @@
 
 function is_palindromic (number) {
+  /* eslint-disable-next-line eqeqeq */
   return number == number.toString().split('').reverse().join('')
 }
 
